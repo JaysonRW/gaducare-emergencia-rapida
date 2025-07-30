@@ -28,6 +28,14 @@ export default {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
+				emergency: {
+					DEFAULT: 'hsl(var(--emergency))',
+					foreground: 'hsl(var(--emergency-foreground))'
+				},
+				'emergency-orange': {
+					DEFAULT: 'hsl(var(--emergency-orange))',
+					foreground: 'hsl(var(--emergency-orange-foreground))'
+				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
@@ -62,6 +70,15 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'hero-overlay': 'var(--hero-overlay)',
+				'trust-gradient': 'var(--trust-gradient)',
+			},
+			boxShadow: {
+				'soft': 'var(--shadow-soft)',
+				'emergency': 'var(--shadow-emergency)',
+				'emergency-glow': 'var(--emergency-glow)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
