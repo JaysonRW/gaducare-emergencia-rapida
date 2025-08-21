@@ -6,6 +6,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import DifferentialsSection from "@/components/DifferentialsSection";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <DifferentialsSection />
       <ContactForm />
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
