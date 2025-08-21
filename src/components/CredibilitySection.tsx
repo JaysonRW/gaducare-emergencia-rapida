@@ -11,7 +11,7 @@ const CredibilitySection = () => {
     },
     {
       icon: Clock,
-      number: "8-12min",
+      number: "8-15min",
       label: "Tempo médio de chegada",
       description: "Rapidez que salva vidas"
     },
@@ -64,15 +64,7 @@ const CredibilitySection = () => {
 
         {/* Additional Trust Elements */}
         <div className="mt-16 text-center">
-          <div className="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            <div className="flex flex-col items-center">
-              <div className="w-16 h-16 bg-emergency/10 rounded-full flex items-center justify-center mb-3">
-                <span className="text-2xl">🏥</span>
-              </div>
-              <span className="font-semibold text-primary">Licenciados</span>
-              <span className="text-sm text-muted-foreground">SAMU & ANS</span>
-            </div>
-            
+          <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 bg-emergency/10 rounded-full flex items-center justify-center mb-3">
                 <span className="text-2xl">⚡</span>
@@ -80,7 +72,7 @@ const CredibilitySection = () => {
               <span className="font-semibold text-primary">Rapidez</span>
               <span className="text-sm text-muted-foreground">Resposta imediata</span>
             </div>
-            
+
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 bg-emergency/10 rounded-full flex items-center justify-center mb-3">
                 <span className="text-2xl">🛡️</span>
@@ -88,7 +80,7 @@ const CredibilitySection = () => {
               <span className="font-semibold text-primary">Segurança</span>
               <span className="text-sm text-muted-foreground">Equipamentos modernos</span>
             </div>
-            
+
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 bg-emergency/10 rounded-full flex items-center justify-center mb-3">
                 <span className="text-2xl">👨‍⚕️</span>

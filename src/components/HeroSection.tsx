@@ -32,26 +32,30 @@ const HeroSection = () => {
           {/* Response Time Badge */}
           <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 mb-10">
             <Clock className="h-5 w-5 text-emergency-orange" />
-            <span className="font-semibold">Tempo médio de resposta: 8-12 minutos</span>
+            <span className="font-semibold">Tempo médio de resposta: 8-15 min</span>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button 
-              variant="emergency" 
-              size="lg" 
+            <Button
+              variant="emergency"
+              size="lg"
               className="text-lg px-8 py-4 h-auto min-w-[280px]"
-              onClick={() => window.open('https://wa.me/5541991630333', '_blank')}
+              onClick={() => {
+                const message = "vi seu anuncio e acessei sua LP e gostaria de saber mais";
+                const whatsappUrl = `https://wa.me/5541991630333?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+              }}
             >
               <Ambulance className="h-6 w-6 mr-3" />
               SOLICITAR AMBULÂNCIA
             </Button>
             
-            <Button 
-              variant="emergency-orange" 
-              size="lg" 
+            <Button
+              variant="emergency-orange"
+              size="lg"
               className="text-lg px-8 py-4 h-auto min-w-[280px]"
-              onClick={() => window.open('https://wa.me/5541991630333', '_blank')}
+              onClick={() => window.location.href = 'tel:41991630333'}
             >
               <Phone className="h-6 w-6 mr-3" />
               FALAR COM ATENDENTE

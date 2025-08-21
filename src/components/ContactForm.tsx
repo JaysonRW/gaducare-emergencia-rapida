@@ -208,10 +208,14 @@ const ContactForm = () => {
                 >
                   (41) 99163-0333
                 </a>
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   className="bg-white/20 border-white/30 text-white hover:bg-white/30"
-                  onClick={() => window.open('https://wa.me/5541991630333', '_blank')}
+                  onClick={() => {
+                    const message = "vi seu anuncio e acessei sua LP e gostaria de saber mais";
+                    const whatsappUrl = `https://wa.me/5541991630333?text=${encodeURIComponent(message)}`;
+                    window.open(whatsappUrl, '_blank');
+                  }}
                 >
                   <MessageSquare className="h-4 w-4 mr-2" />
                   WhatsApp Direto
@@ -227,7 +231,7 @@ const ContactForm = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-foreground">Tempo de Resposta</h4>
-                  <p className="text-muted-foreground">8-12 minutos em média</p>
+                  <p className="text-muted-foreground">8-15 min em média</p>
                 </div>
               </div>
             </Card>

@@ -102,10 +102,14 @@ const ServicesSection = () => {
               </ul>
 
               {/* CTA Button */}
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"
-                onClick={() => window.open('https://wa.me/5541991630333', '_blank')}
+                onClick={() => {
+                  const message = "vi seu anuncio e acessei sua LP e gostaria de saber mais";
+                  const whatsappUrl = `https://wa.me/5541991630333?text=${encodeURIComponent(message)}`;
+                  window.open(whatsappUrl, '_blank');
+                }}
               >
                 Solicitar Atendimento
                 <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -124,20 +128,24 @@ const ServicesSection = () => {
               Nossa central de emergências está disponível 24 horas por dia, 7 dias por semana
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                variant="emergency" 
-                size="lg" 
+              <Button
+                variant="emergency"
+                size="lg"
                 className="gap-2"
-                onClick={() => window.open('https://wa.me/5541991630333', '_blank')}
+                onClick={() => window.location.href = 'tel:41991630333'}
               >
                 <Ambulance className="h-5 w-5" />
                 EMERGÊNCIA: (41) 99163-0333
               </Button>
-              <Button 
-                variant="emergency-orange" 
-                size="lg" 
+              <Button
+                variant="emergency-orange"
+                size="lg"
                 className="gap-2"
-                onClick={() => window.open('https://wa.me/5541991630333', '_blank')}
+                onClick={() => {
+                  const message = "vi seu anuncio e acessei sua LP e gostaria de saber mais";
+                  const whatsappUrl = `https://wa.me/5541991630333?text=${encodeURIComponent(message)}`;
+                  window.open(whatsappUrl, '_blank');
+                }}
               >
                 WhatsApp Imediato
               </Button>

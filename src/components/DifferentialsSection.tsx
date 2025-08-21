@@ -33,7 +33,7 @@ const DifferentialsSection = () => {
     {
       icon: Zap,
       title: "Rapidez no Atendimento",
-      description: "Sistema de dispatch otimizado e frota estrategicamente posicionada para tempo de resposta de 8-12 minutos.",
+      description: "Sistema de dispatch otimizado e frota estrategicamente posicionada para tempo de resposta de 8-15 min.",
       features: ["GPS em tempo real", "Rota otimizada", "Central integrada", "Comunicação direta"]
     },
     {
@@ -149,15 +149,23 @@ const DifferentialsSection = () => {
               Entre em contato agora e tenha a tranquilidade de contar com especialistas
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button 
+              <button
                 className="bg-emergency hover:bg-emergency/90 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105 shadow-emergency"
-                onClick={() => window.open('https://wa.me/5541991630333', '_blank')}
+                onClick={() => {
+                  const message = "vi seu anuncio e acessei sua LP e gostaria de saber mais";
+                  const whatsappUrl = `https://wa.me/5541991630333?text=${encodeURIComponent(message)}`;
+                  window.open(whatsappUrl, '_blank');
+                }}
               >
                 SOLICITAR AMBULÂNCIA AGORA
               </button>
-              <button 
+              <button
                 className="bg-white/20 hover:bg-white/30 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 backdrop-blur-sm"
-                onClick={() => window.open('https://wa.me/5541991630333', '_blank')}
+                onClick={() => {
+                  const message = "vi seu anuncio e acessei sua LP e gostaria de saber mais";
+                  const whatsappUrl = `https://wa.me/5541991630333?text=${encodeURIComponent(message)}`;
+                  window.open(whatsappUrl, '_blank');
+                }}
               >
                 FALAR COM ESPECIALISTA
               </button>

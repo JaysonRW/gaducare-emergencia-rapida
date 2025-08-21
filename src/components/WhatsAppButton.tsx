@@ -18,7 +18,9 @@ const WhatsAppButton = () => {
   }, []);
 
   const handleClick = () => {
-    window.open('https://wa.me/5541991630333', '_blank');
+    const message = "vi seu anuncio e acessei sua LP e gostaria de saber mais";
+    const whatsappUrl = `https://wa.me/5541991630333?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   return (

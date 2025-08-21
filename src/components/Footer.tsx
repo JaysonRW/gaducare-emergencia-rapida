@@ -21,15 +21,19 @@ const Footer = () => {
               Equipe especializada e equipamentos de última geração.
             </p>
             <div className="flex gap-3">
-              <Button 
-                size="sm" 
-                variant="outline" 
-                className="bg-white/10 border-white/30 text-white hover:bg-white/20"
-                onClick={() => window.open('https://wa.me/5541991630333', '_blank')}
-              >
-                <MessageSquare className="h-4 w-4 mr-2" />
-                WhatsApp
-              </Button>
+            <Button
+              variant="emergency-orange"
+              size="lg"
+              className="gap-2"
+              onClick={() => {
+                const message = "vi seu anuncio e acessei sua LP e gostaria de saber mais";
+                const whatsappUrl = `https://wa.me/5541991630333?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+              }}
+            >
+              <MessageSquare className="h-4 w-4" />
+              WhatsApp
+            </Button>
             </div>
           </div>
 

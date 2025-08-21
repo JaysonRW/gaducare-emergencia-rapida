@@ -158,9 +158,6 @@ const TestimonialsSection = () => {
             <span className="text-primary font-semibold">
               4.9/5 de satisfação
             </span>
-            <span className="text-muted-foreground">
-              • 1.200+ avaliações
-            </span>
           </div>
         </div>
       </div>

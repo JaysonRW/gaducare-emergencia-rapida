@@ -41,18 +41,27 @@ const Header = () => {
           </div>
           
           {/* WhatsApp Button */}
-          <Button 
-            size="sm" 
-            variant="emergency-orange" 
+          <Button
+            size="sm"
+            variant="emergency-orange"
             className="gap-2"
-            onClick={() => window.open('https://wa.me/5541991630333', '_blank')}
+            onClick={() => {
+              const message = "vi seu anuncio e acessei sua LP e gostaria de saber mais";
+              const whatsappUrl = `https://wa.me/5541991630333?text=${encodeURIComponent(message)}`;
+              window.open(whatsappUrl, '_blank');
+            }}
           >
             <MessageSquare className="h-4 w-4" />
             <span className="hidden sm:inline">WhatsApp</span>
           </Button>
 
           {/* Main CTA */}
-          <Button variant="emergency" size="lg" className="gap-2">
+          <Button
+            variant="emergency"
+            size="lg"
+            className="gap-2"
+            onClick={() => window.location.href = 'tel:41991630333'}
+          >
             <Ambulance className="h-5 w-5" />
             <span className="hidden lg:inline">SOLICITAR AMBULÂNCIA AGORA</span>
             <span className="lg:hidden">AMBULÂNCIA</span>
