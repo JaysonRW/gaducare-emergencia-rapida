@@ -24,24 +24,24 @@ const CredibilitySection = () => {
   ];
 
   return (
-    <section className="py-20 bg-primary/5">
+    <section className="py-12 sm:py-16 lg:py-20 bg-primary/5">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">
             Confiança Comprovada
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
             Números que demonstram nossa excelência em atendimento de emergência
           </p>
         </div>
 
         {/* Stats Grid */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {stats.map((stat, index) => (
-            <Card 
-              key={index} 
-              className="text-center p-8 bg-card shadow-soft hover:shadow-lg transition-all duration-300 hover:scale-105 border-0"
+            <Card
+              key={index}
+              className="text-center p-6 sm:p-8 bg-card shadow-soft hover:shadow-lg transition-all duration-300 hover:scale-105 border-0"
             >
               <div className="inline-flex items-center justify-center w-20 h-20 bg-trust-gradient rounded-full mb-6">
                 <stat.icon className="h-10 w-10 text-white" />

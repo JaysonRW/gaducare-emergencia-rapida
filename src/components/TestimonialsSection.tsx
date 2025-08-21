@@ -52,21 +52,21 @@ const TestimonialsSection = () => {
   }, [testimonials.length]);
 
   return (
-    <section className="py-20 bg-primary/5">
+    <section className="py-12 sm:py-16 lg:py-20 bg-primary/5">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">
             O Que Dizem Nossos Clientes
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
             Depoimentos reais de pessoas que confiaram suas vidas aos nossos cuidados
           </p>
         </div>
 
         {/* Main Testimonial */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <Card className="p-8 md:p-12 bg-card shadow-soft border-0 relative overflow-hidden">
+        <div className="max-w-4xl mx-auto mb-8 sm:mb-12">
+          <Card className="p-6 sm:p-8 md:p-12 bg-card shadow-soft border-0 relative overflow-hidden">
             {/* Quote Icon */}
             <div className="absolute top-6 left-6 text-primary/20">
               <Quote className="h-12 w-12" />

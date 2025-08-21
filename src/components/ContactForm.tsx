@@ -77,21 +77,21 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contato" className="py-20 bg-primary/5">
+    <section id="contato" className="py-12 sm:py-16 lg:py-20 bg-primary/5">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">
             Solicitar Atendimento
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
             Preencha o formulário abaixo e nossa equipe entrará em contato imediatamente
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
-          <Card className="p-8 bg-card shadow-soft border-0">
+          <Card className="p-4 sm:p-6 lg:p-8 bg-card shadow-soft border-0">
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name */}
               <div>

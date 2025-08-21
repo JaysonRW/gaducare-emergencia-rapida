@@ -5,19 +5,19 @@ import logoGadu from "@/assets/logo-gadu.png";
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 py-8 sm:py-12 lg:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Company Info */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <img src={logoGadu} alt="GADU Emergências" className="h-12 w-12" />
+          <div className="space-y-4 text-center sm:text-left">
+            <div className="flex items-center gap-3 justify-center sm:justify-start">
+              <img src={logoGadu} alt="GADU Emergências" className="h-10 w-10 sm:h-12 sm:w-12" />
               <div>
-                <h3 className="text-xl font-bold">GADU</h3>
+                <h3 className="text-lg sm:text-xl font-bold">GADU</h3>
                 <p className="text-sm text-primary-foreground/80">Emergências</p>
               </div>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
-              Atendimento médico de emergência 24 horas em Curitiba e região metropolitana. 
+              Atendimento médico de emergência 24 horas em Curitiba e região metropolitana.
               Equipe especializada e equipamentos de última geração.
             </p>
             <div className="flex gap-3">

@@ -57,24 +57,24 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="servicos" className="py-20 bg-background">
+    <section id="servicos" className="py-12 sm:py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">
             Nossos Serviços
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
             Atendimento médico especializado com tecnologia de ponta e equipe altamente qualificada para todas as emergências
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => (
-            <Card 
-              key={index} 
-              className="p-6 bg-card shadow-soft hover:shadow-lg transition-all duration-300 hover:scale-105 border-0 group"
+            <Card
+              key={index}
+              className="p-4 sm:p-6 bg-card shadow-soft hover:shadow-lg transition-all duration-300 hover:scale-105 border-0 group"
             >
               {/* Icon */}
               <div className={`inline-flex items-center justify-center w-16 h-16 rounded-xl mb-4 ${service.color}`}>
